@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <title>Multi game</title>
+  <style>
+    body{
+      background-image: url(img/bg.jpg);
+    }
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    #pirate, #chest{
+      position: absolute;
+    }
+    #chest{
+      top: 100px;
+    }
+    .main{
+      background-image: url(img/bg.png);
+      border: 1px solid white;
+    }
+    .char{
+      border: 1px solid white;
+    }
+    .go{
+      background-image: url(img/go.png);
+    }
+    #class0{
+
+    }
+    #class1 img{
+      content:url(img/chest1.png);
+    }
+    #class2 img{
+      content:url(img/chest2.png);
+    }
+    #class3 img{
+      content:url(img/chest3.png);
+    }
+    #class4 img{
+      content:url(img/chest4.png);
+    }
+    #class5 img{
+      content:url(img/chest5.png);
+    }
+    #class6 img{
+      content:url(img/chest6.png);
+    }
+    .pontDiv{
+      font-size: 3em;
+      color: white;
+    }
+    .timeDiv{
+      font-size: 2em;
+      color: white;
+    }
+    .gameover{
+      font-size: 1.3em;
+      border-radius: 1em;
+      background-image: url("img/btn.jpg");
+      color: white;
+    }
+    .goDiv{
+      font-size: 3em;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <audio controls autoplay loop hidden src="main.mp3" id="myaudio">
+  </audio>
+  <audio controls hidden src="money.wav" id="money"></audio>
+  <audio controls hidden src="money2.mp3" id="money2"></audio>
+  <audio controls hidden src="gameover.mp3" id="gameover"></audio>
+  <audio controls hidden src="point.mp3" id="point"></audio>
+  <audio controls hidden src="bomb.mp3" id="bomb"></audio>
+  <script src="js.js"></script>
+</body>
+</html>
